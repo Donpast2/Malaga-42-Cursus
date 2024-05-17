@@ -6,10 +6,9 @@
 /*   By: jblanco- <jblanco-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/11 12:01:48 by jblanco-          #+#    #+#             */
-/*   Updated: 2024/05/16 11:51:19 by jblanco-         ###   ########.fr       */
+/*   Updated: 2024/05/17 12:39:28 by jblanco-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #ifndef LIBFT_H
 #define LIBFT_H
 
@@ -17,7 +16,12 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <unistd.h>
-/*#include <string.h>*/
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
 
 int	ft_isalpha(int c);
 int	ft_isdigit(int c);
